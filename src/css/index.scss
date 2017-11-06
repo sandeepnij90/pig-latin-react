@@ -1,0 +1,57 @@
+$darkPink: #bd364a;
+$lightPink: #f4abba;
+$white: #ffffff;
+
+html,
+body{
+  background-color:$darkPink;
+}
+
+#app {
+  .container{
+    margin:auto;
+    width:100%;
+    max-width:500px;
+    text-align:center;
+  }
+
+  h1 {
+    color:$white;
+    font-family: 'Pacifico', cursive;
+  }
+  p {
+    color: $white;
+    font-style: italic;
+    font-size:16px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+  textarea{
+    width:280px;
+    max-width: 280px;
+    border:0;
+    padding:10px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+  button{
+    width:280px;
+    height:30px;
+    border:0;
+    color:$darkPink;
+    background-color:$lightPink;
+    padding:2px;
+    transition:0.5s;
+    cursor:pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+    &:hover{
+      background-color:lighten($darkPink,20);
+      color:$white;
+    }
+  }
+}
